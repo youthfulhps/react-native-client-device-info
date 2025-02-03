@@ -161,6 +161,7 @@ jobs:
             **/ios/Pods
           key: ${{ steps.cocoapods-cache.outputs.cache-key }}
 
-      - name: Build example for iOS
+      - name: Build example for iOS (ignore turbo cache on failure)
         run: |
-          yarn turbo run build:ios
+          set -e
+          yarn turbo run build:ios --cache-dir="${{ env.TURBO_CACHE_DIR }}" || (echo "Turbo cache failed, retrying without cache..." && rm -rf "${{ env.TURBO_CACHE_DIR }}" && yarn turbo run build:ios)
