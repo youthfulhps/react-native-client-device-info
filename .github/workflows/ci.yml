@@ -145,11 +145,11 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-cocoapods-
 
-      - name: Install cocoapods
+      - name: Install cocoapods (force reinstall)
         run: |
           cd example/ios
           rm -rf Pods Podfile.lock
-          pod install
+          pod install --repo-update
         env:
           NO_FLIPPER: 1
 
@@ -163,4 +163,4 @@ jobs:
 
       - name: Build example for iOS
         run: |
-          yarn turbo run build:ios --cache-dir="${{ env.TURBO_CACHE_DIR }}"
+          yarn turbo run build:ios
