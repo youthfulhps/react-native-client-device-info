@@ -26,7 +26,7 @@ Device info for React Native
 | [getDeviceId()](#getdeviceid)                                       | `string`           |  ❌   |   ❌    |   ❌     | ❌   |   ❌     |
 | [getDeviceType()](#getDeviceType)                                   | `string`           |  ❌   |   ❌    |   ❌     | ❌   |   ❌     |
 | [getDisplay()](#getdisplay)                                         | `Promise<string>`  |  ❌   |   ❌    |   ❌     | ❌   |   ❌     |
-| [getDeviceName()](#getdevicename)                                   | `string`   |   ✅   |   ❌    |   ❌     | ❌   |   ❌     |
+| [getDeviceName()](#getdevicename)                                   | `string`   |   ✅   |   ✅    |   ❌     | ❌   |   ❌     |
 | [getDeviceToken()](#getdevicetoken)                                 | `Promise<string>`  |  ❌   |   ❌    |   ❌     | ❌   |   ❌     |
 | [getFirstInstallTime()](#getfirstinstalltime)                       | `Promise<number>`  |  ❌   |   ❌    |   ❌     | ❌   |   ❌     |
 | [getFingerprint()](#getfingerprint)                                 | `Promise<string>`  |  ❌   |   ❌    |   ❌     | ❌   |   ❌     |
