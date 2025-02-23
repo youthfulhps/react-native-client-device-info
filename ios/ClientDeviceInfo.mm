@@ -16,6 +16,12 @@ RCT_EXPORT_MODULE()
   return name;
 }
 
+- (NSString *)getApplicationName {
+  NSString *appName = [[NSBundle mainBundle] objectForInfoDictionaryKey:@"CFBundleDisplayName"];
+
+  return appName;
+}
+
 - (std::shared_ptr<facebook::react::TurboModule>)getTurboModule:
     (const facebook::react::ObjCTurboModule::InitParams &)params
 {
