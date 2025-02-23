@@ -2,6 +2,7 @@ package com.clientdeviceinfo
 
 import com.facebook.react.bridge.ReactApplicationContext
 import com.facebook.react.module.annotations.ReactModule
+import android.os.Build
 
 @ReactModule(name = ClientDeviceInfoModule.NAME)
 class ClientDeviceInfoModule(reactContext: ReactApplicationContext) :
@@ -11,10 +12,8 @@ class ClientDeviceInfoModule(reactContext: ReactApplicationContext) :
     return NAME
   }
 
-  // Example method
-  // See https://reactnative.dev/docs/native-modules-android
-  override fun multiply(a: Double, b: Double): Double {
-    return a * b
+  override fun getDeviceName(): String {
+    return "${Build.MANUFACTURER} ${Build.MODEL}"
   }
 
   companion object {

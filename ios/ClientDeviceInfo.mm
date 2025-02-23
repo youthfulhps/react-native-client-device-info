@@ -9,6 +9,13 @@ RCT_EXPORT_MODULE()
     return result;
 }
 
+- (NSString *)getDeviceName {
+  UIDevice *device = [UIDevice currentDevice];
+  NSString *name = device.name;
+
+  return name;
+}
+
 - (std::shared_ptr<facebook::react::TurboModule>)getTurboModule:
     (const facebook::react::ObjCTurboModule::InitParams &)params
 {
