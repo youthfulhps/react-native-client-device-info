@@ -19,6 +19,13 @@ class ClientDeviceInfoModule(reactContext: ReactApplicationContext) :
     return "${Build.MANUFACTURER} ${Build.MODEL}"
   }
 
+  override fun getBuildNumber(): String {
+    val context: Context = reactApplicationContext
+    val packageManager: PackageManager = context.packageManager
+    val packageInfo = packageManager.getPackageInfo(context.packageName, 0)
+    return packageInfo.versionCode.toString()
+  }
+
   override fun getApplicationName(): String {
     val context: Context = reactApplicationContext
     val packageManager: PackageManager = context.packageManager
