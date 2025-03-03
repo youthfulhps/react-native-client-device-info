@@ -28,6 +28,12 @@ RCT_EXPORT_MODULE()
   return buildNumber;
 }
 
+- (NSString *)getVersion {
+  NSString *buildVersion = [[NSBundle mainBundle] objectForInfoDictionaryKey:@"CFBundleShortVersionString"];
+
+  return buildVersion;
+}
+
 - (std::shared_ptr<facebook::react::TurboModule>)getTurboModule:
     (const facebook::react::ObjCTurboModule::InitParams &)params
 {

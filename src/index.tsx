@@ -11,3 +11,7 @@ export function getApplicationName(): string {
 export function getBuildNumber(): string {
   return ClientDeviceInfo.getBuildNumber();
 }
+
+export function getVersion(): string {
+  return ClientDeviceInfo.getVersion();
+}

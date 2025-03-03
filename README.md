@@ -17,7 +17,7 @@ Device info for React Native
 | [getBatteryLevel()](#getbatterylevel)                               | `Promise<number>`  |  ❌   |    ❌    |   ❌     | ❌   |   ❌     |
 | [getBootloader()](#getbootloader)                                   | `Promise<string>`  |  ❌   |    ❌    |   ❌     | ❌   |   ❌     |
 | [getBrand()](#getbrand)                                             | `string`           |  ❌   |    ❌    |   ❌     | ❌   |   ❌     |
-| [getBuildNumber()](#getbuildnumber)                                 | `string`           |   ✅   |    ✅     |   ❌     | ❌   |   ❌     |
+| [getBuildNumber()](#getbuildnumber)                                 | `string`           |  ✅   |    ✅    |   ❌     | ❌   |   ❌     |
 | [getBundleId()](#getbundleid)                                       | `string`           |  ❌   |    ❌    |   ❌     | ❌   |   ❌     |
 | [isCameraPresent()](#iscamerapresent)                               | `Promise<boolean>` |  ❌   |    ❌    |   ❌     | ❌   |   ❌     |
 | [getCarrier()](#getcarrier)                                         | `Promise<string>`  |  ❌   |    ❌    |   ❌     | ❌   |   ❌     |
@@ -65,7 +65,7 @@ Device info for React Native
 | [getUsedMemory()](#getusedmemory)                                   | `Promise<number>`  |  ❌   |    ❌    |   ❌     | ❌   |   ❌     |
 | [getUserAgent()](#getuseragent)                                     | `Promise<string>`  |  ❌   |    ❌    |   ❌     | ❌   |   ❌     |
 | [getUserAgentSync()](#getuseragent)                                 | `string`           |  ❌   |    ❌    |   ❌     | ❌   |   ❌     |
-| [getVersion()](#getversion)                                         | `string`           |  ❌   |    ❌    |   ❌     | ❌   |   ❌     |
+| [getVersion()](#getversion)                                         | `string`           |   ✅   |    ✅     |   ❌     | ❌   |   ❌     |
 | [getBrightness()](#getBrightness)                                   | `Promise<number>`  |  ❌   |    ❌    |   ❌     | ❌   |   ❌     |
 | [hasGms()](#hasGms)                                                 | `Promise<boolean>` |  ❌   |    ❌    |   ❌     | ❌   |   ❌     |
 | [hasHms()](#hasHms)                                                 | `Promise<boolean>` |  ❌   |    ❌    |   ❌     | ❌   |   ❌     |

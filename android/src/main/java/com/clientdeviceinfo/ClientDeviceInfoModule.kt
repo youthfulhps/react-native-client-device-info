@@ -33,6 +33,13 @@ class ClientDeviceInfoModule(reactContext: ReactApplicationContext) :
     return packageManager.getApplicationLabel(applicationInfo).toString()
   }
 
+  override fun getVersion(): String {
+    val context: Context = reactApplicationContext
+    val packageManager: PackageManager = context.packageManager
+    val packageInfo = packageManager.getPackageInfo(context.packageName, 0)
+    return packageInfo.versionName ?: ""
+  }
+
 
   companion object {
     const val NAME = "ClientDeviceInfo"
