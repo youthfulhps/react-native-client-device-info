@@ -9,6 +9,25 @@ RCT_EXPORT_MODULE()
     return result;
 }
 
+- (NSString *)getDeviceName {
+  UIDevice *device = [UIDevice currentDevice];
+  NSString *name = device.name;
+
+  return name;
+}
+
+- (NSString *)getApplicationName {
+  NSString *appName = [[NSBundle mainBundle] objectForInfoDictionaryKey:@"CFBundleDisplayName"];
+
+  return appName;
+}
+
+- (NSString *)getBuildNumber {
+  NSString *buildNumber = [[NSBundle mainBundle] objectForInfoDictionaryKey:@"CFBundleVersion"];
+
+  return buildNumber;
+}
+
 - (std::shared_ptr<facebook::react::TurboModule>)getTurboModule:
     (const facebook::react::ObjCTurboModule::InitParams &)params
 {
