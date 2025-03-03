@@ -5,6 +5,7 @@ export interface Spec extends TurboModule {
   getDeviceName(): string;
   getApplicationName(): string;
   getBuildNumber(): string;
+  getVersion(): string;
 }
 
 export default TurboModuleRegistry.getEnforcing<Spec>('ClientDeviceInfo');
