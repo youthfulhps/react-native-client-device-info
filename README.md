@@ -10,14 +10,14 @@ Device info for React Native
 | ------------------------------------------------------------------- | ------------------ |:----:|:-------:| :-----: | :-:  | :------: |
 | [getAndroidId()](#getandroidid)                                     | `Promise<string>`  |  ❌   |    ❌    |   ❌     | ❌   |   ❌     |
 | [getApiLevel()](#getapilevel)                                       | `Promise<number>`  |  ❌   |    ❌    |   ❌     | ❌   |   ❌     |
-| [getApplicationName()](#getapplicationname)                         | `string`           |   ✅   |    ✅     |   ❌     | ❌   |   ❌     |
+| [getApplicationName()](#getapplicationname)                         | `string`           |  ✅   |    ✅    |   ❌     | ❌   |   ❌     |
 | [getAvailableLocationProviders()](#getAvailableLocationProviders)   | `Promise<Object>`  |  ❌   |    ❌    |   ❌     | ❌   |   ❌     |
 | [getBaseOs()](#getbaseOs)                                           | `Promise<string>`  |  ❌   |    ❌    |   ❌     | ❌   |   ❌     |
 | [getBuildId()](#getbuildid)                                         | `Promise<string>`  |  ❌   |    ❌    |   ❌     | ❌   |   ❌     |
 | [getBatteryLevel()](#getbatterylevel)                               | `Promise<number>`  |  ❌   |    ❌    |   ❌     | ❌   |   ❌     |
 | [getBootloader()](#getbootloader)                                   | `Promise<string>`  |  ❌   |    ❌    |   ❌     | ❌   |   ❌     |
 | [getBrand()](#getbrand)                                             | `string`           |  ❌   |    ❌    |   ❌     | ❌   |   ❌     |
-| [getBuildNumber()](#getbuildnumber)                                 | `string`           |  ❌   |    ❌    |   ❌     | ❌   |   ❌     |
+| [getBuildNumber()](#getbuildnumber)                                 | `string`           |   ✅   |    ✅     |   ❌     | ❌   |   ❌     |
 | [getBundleId()](#getbundleid)                                       | `string`           |  ❌   |    ❌    |   ❌     | ❌   |   ❌     |
 | [isCameraPresent()](#iscamerapresent)                               | `Promise<boolean>` |  ❌   |    ❌    |   ❌     | ❌   |   ❌     |
 | [getCarrier()](#getcarrier)                                         | `Promise<string>`  |  ❌   |    ❌    |   ❌     | ❌   |   ❌     |

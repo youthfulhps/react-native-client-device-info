@@ -7,3 +7,7 @@ export function getDeviceName(): string {
 export function getApplicationName(): string {
   return ClientDeviceInfo.getApplicationName();
 }
+
+export function getBuildNumber(): string {
+  return ClientDeviceInfo.getBuildNumber();
+}
